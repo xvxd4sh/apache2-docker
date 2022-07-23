@@ -21,7 +21,7 @@ RUN apt-get install -y ssl-cert && \
 a2enmod rewrite headers proxy proxy_http cache && a2dismod -f deflate && \
 a2enmod ssl && a2ensite default-ssl.conf
 
-ENTRYPOINT ["/bin/bash -c", "echo 'Apache up and running'"]
+#ENTRYPOINT ["/bin/bash -c", "echo 'Apache up and running'"]
 
 # WORKDIR ${CISA_HOME}
 # USER cisa
